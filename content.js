@@ -5,7 +5,7 @@ function removeSkibidiVideos() {
 
     videos.forEach(video => {
         const titleElement = video.querySelector('#video-title');
-        if (titleElement && titleElement.textContent.toLowerCase().includes('skibidi')) {
+        if (titleElement && titleElement.textContent.includes('skibidi')) {
             // If the title contains "skibidi", remove the video
             video.style.display = 'none';
         }
