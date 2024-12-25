@@ -1,7 +1,7 @@
 // content.js
 function removeSkibidiVideos() {
     // Get all video titles
-    const videos = document.querySelectorAll('ytd-grid-video-renderer, ytd-video-renderer');
+    const videos = document.querySelectorAll('style-scope ytd-two-column-search-results-renderer');
 
     videos.forEach(video => {
         const titleElement = video.querySelector('#video-title');
