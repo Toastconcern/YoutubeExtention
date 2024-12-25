@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Remove Skibidi Videos",
+  "version": "1.0",
+  "description": "Removes YouTube videos with the word 'skibidi' in the title.",
+  "icons": {
+    "48": "icons/icon48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
